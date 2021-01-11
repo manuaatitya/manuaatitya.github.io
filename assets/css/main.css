@@ -1,0 +1,307 @@
+/* --------------------------------------------------------------------------------- */
+/* ---------------------------------Common Stylings ---------------------------------*/
+/* --------------------------------------------------------------------------------- */
+
+html /* If this is not added then footer will disapper since body takes up 100%vh */
+{
+    height: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body
+{
+    margin: auto;
+    /* min-height: 100%; */
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    /* vertical-align: middle; */
+}
+
+.bold-heading {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.heading-underline {
+    border-bottom: 5px solid blue;
+    margin: auto;
+    display: block;
+    width: 4%;
+}
+
+.short-intro{
+    width: 80%;
+    padding-top: 10px;
+    /* height: 100%; */
+    margin: auto;
+}
+
+.short-intro img{
+    width: 700px;
+    height: 400px;
+    text-align: left;
+    /* padding-left: 10%; */
+    padding-top: 10px;
+    /* float:left; */
+}
+
+.short-intro p{
+    text-align: right;
+}
+
+.short-intro .bold-name{
+    text-align: right;
+    font-size: 75px;
+}
+
+
+.about{
+    width: 60%;
+    /* background-image: url(../images/1.jpeg); */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    margin: auto;
+}
+
+.projects{
+    width: 100%;
+    background-color: chartreuse;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* ----------------------------- Styling for Projects Section---------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+
+/* --------------------------- End of Styling of Projects Section ----------------------- */
+
+/* -------------------------------------------------------------------------------------- */
+/* ----------------------------- Styling for Contact Section----------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+.contact
+{
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* position: fixed; */
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons {
+    font-size: 20px;
+    text-align: center;
+}
+
+.social-icons a:hover {
+    color: blue;
+    text-align: center;
+}
+
+.about a:hover{
+    color: blue;
+    text-align: center;
+}
+
+.about a{
+    color: black;
+}
+
+.social-icons i.fas, .social-icons i.fab {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+    margin-right: 10px; 
+    text-align: center;
+  }
+/* --------------------------- End of Styling of Contact Section -------------------------- */
+
+
+
+
+
+
+/* ------------------------------ Start of styling for left side of the webpage  -------------------------------------- */
+.sidebar-navigation
+{
+    font-size: 20px;
+    width: 30%;
+    height: 100%; 
+    background-color: black;           
+    opacity: 0.9;    
+    display: inline-block;  
+    position: fixed;                 
+}    
+
+.sidebar-navigation nav 
+{
+    position: relative;
+    top: 65%;
+    left: 70%;
+    -webkit-transform: translateX(-60%) translateY(-60%);
+    -moz-transform: translateX(-60%) translateY(-60%);
+    -ms-transform: translateX(-60%) translateY(-60%);
+    -o-transform: translateX(-60%) translateY(-60%);
+    transform: translateX(-60%) translateY(-60%);
+}
+
+.sidebar-navigation nav a{
+    display: inline-block;
+    color: #fff;
+    margin-top: 5px;
+    text-decoration: none!important;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+  }
+
+.sidebar-navigation ul
+{
+    margin-top: 0px;
+    margin-left: 45px;
+    padding: 0;
+    list-style-type: none;
+    color: white;
+}
+
+.sidebar-navigation li
+{
+    padding: 10px 0;
+}
+
+.sidebar-navigation nav ul li .rect
+{
+    display: inline-block;
+    height: 1px;
+    width: 0px;
+    left: 0;
+    bottom: 5.5px;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform 0.1s, width 0.6s;
+    -moz-transition: -webkit-transform 0.1s, width 0.6s;
+    transition: transform 0.1s, width 0.6s;
+    position: relative;
+}
+
+.circle
+{
+    display: inline-block;
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+    left: 0px;
+    top: -1px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+}
+
+.sidebar-navigation .social-icons {
+    position: absolute;
+    width: 30vw;  
+    bottom: 10px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    left: -1vw;
+  }
+  
+  .sidebar-navigation .social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .sidebar-navigation .social-icons li:last-child {
+    margin-right: 0px;
+  }
+  
+  .sidebar-navigation .social-icons li a {
+    font-size: 18px;
+    color: #fff;
+    transition: all 0.5s;
+  }
+  
+  .sidebar-navigation .social-icons li a:hover {
+    color: #45489a;
+  }
+/* ---------------------------------- End of styling for left side of the webpage ---------------------------------------- */
+
+
+/* ---------------------------------- Start of styling for right side of the webpage ---------------------------------------- */
+.right-side
+{
+    background-color: teal;
+    width: 70%;
+    height: 100vh;
+    float: right;
+    position: relative;
+}
+
+.right-side #home
+{
+    height: 50vh;
+}
+
+.right-side #education
+{
+    height: 50vh;
+}
+
+.right-side #experience
+{
+    height: 50vh;
+}
+
+
+
+/* ---------------------------------- End of styling for right side of the webpage ---------------------------------------- */
+
+
+
+/* ---------------------------------- Start of styling for footer section of the webpage ---------------------------------------- */
+.webpage-footer                           
+{                                         
+    background-color: white;            
+    text-align: center;                   
+    height: 40px; 
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    /* left: 30vw; */
+    opacity: 1.0;
+}
+
+.webpage-footer p
+{
+    margin-bottom: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* ---------------------------------- End of styling for footer section of the webpage ---------------------------------------- */
